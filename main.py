@@ -1,16 +1,58 @@
-# This is a sample Python script.
+f = open('students.txt')
+arr = [str(x) for x in f]
+nw_arr = []
+for i in range(len(arr) - 1):
+    if len(arr[i]) == 3:
+        nw_arr.append(arr[i][-3])
+    nw_arr.append(arr[i][-2])
+nw_arr.remove('e')
+print(nw_arr)
+intarr = [int(x) for x in nw_arr]
+'''
+____sexy?Sexy
+___?Sexy?Sexy?R
+___?Sexy?Sexy?R
+__?Sexy?Sexy?Se
+_?Sexy?Sexy?Se
+_?Sexy?Sexy?Se
+_?Sexy?Sexy?Sexy?
+?Sexy?Sexy?Sexy?Sexy
+?Sexy?Sexy?Sexy?Sexy?Se
+?Sexy?Sexy?Sexy?Sexy?Sex
+_?Sexy?__?Sexy?Sexy?Sex
+___?Sex____?Sexy?Sexy?
+___?Sex_____?Sexy?Sexy
+___?Sex_____?Sexy?Sexy
+____?Sex____?Sexy?Sexy
+_____?Se____?Sexy?Sex
+______?Se__?Sexy?Sexy
+_______?Sexy?Sexy?Sex
+________?Sexy?Sexy?Sex
+_______?Sexy?Sexy?Sexy?Se
+_______?Sexy?Sexy?Sexy?Sexy?
+_______?Sexy?Sexy?Sexy?Sexy?Sexy
+_______?Sexy?Sexy?Sexy?Sexy?Sexy?R
+________?Sexy?Sexy____?Sexy?Sexy?Se
+_________?Sexy?Se_______?Sexy?Sexy?
+_________?Sexy?Se_____?Sexy?Sexy?
+_________?Sexy?R____?Sexy?Sexy
+_________?Sexy?R_?Sexy?Sexy
+________?Sexy?Sexy?Sexy
+________?Sexy?Sexy?R
+________?Sexy?Sexy
+_______?Sexy?Se
+_______?Sexy?
+______?Sexy?
+______?Sexy?
+______?Sexy?
+______?Sexy
+______?Sexy
+_______?Sex
+_______?Sex
+_______?Sex
+______?Sexy?
+______?Sexyy
+_______|_?Sex
+_______|__?Sex
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+8 to toggle the breakpoint.
-
-nbhjg
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+'''
