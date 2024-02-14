@@ -9,3 +9,4 @@ nw_arr.remove('e')
 print(nw_arr)
 intarr = [int(x) for x in nw_arr]
 
+d
